@@ -9,7 +9,7 @@ public class PlayerMove : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            float h = Input.GetAxis("Horizontal");;
+            float h = Input.GetAxis("Horizontal");
             float v = Input.GetAxis("Vertical");
             
             Vector3 playerMovement = new Vector2(h, v) * (moveSpeed * Time.deltaTime);
